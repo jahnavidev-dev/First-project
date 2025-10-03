@@ -11,7 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
       - name: print hello world
-        run: echo " hello github actions "
+        run: echo "hello github actions"
  deploy:
     needs: build
     runs-on: ubuntu-latest
