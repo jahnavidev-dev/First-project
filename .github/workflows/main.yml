@@ -1,10 +1,11 @@
 name: CI/CD
+
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,7 +14,8 @@ jobs:
         uses: actions/checkout@v5
       - name: print hello world
         run: echo "hello github actions"
-   deploy:
+
+  deploy:          # must be at the same level as build
     needs: build
     runs-on: ubuntu-latest
     steps:
