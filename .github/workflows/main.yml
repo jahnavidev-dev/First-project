@@ -1,14 +1,14 @@
-name : CI/CD
+name: CI/CD
 on:
   push:
     branches: [ "main" ]
-  pull_requests:
+  pull_request:
     branches: [ "main" ]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-      - uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v5.0.0
       - name: print hello world
-      - run: echo " hello github actions "
+        run: echo " hello github actions "
