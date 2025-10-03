@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5.0.0
+        uses: uses: actions/checkout@v5
       - name: print hello world
         run: echo " hello github actions "
  deploy:
